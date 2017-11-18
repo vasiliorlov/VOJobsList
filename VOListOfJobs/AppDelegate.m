@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "VODataBase.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+        VODataBase * database = [VODataBase sharedInstance];
+    if (![database isDatabaseCreated]){
+        [database createDatabase];
+    }
+
     return YES;
 }
 

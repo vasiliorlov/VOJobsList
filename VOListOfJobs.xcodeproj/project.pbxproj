@@ -7,15 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21EEED4459698D8252EC541A /* VOJobsListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5352BA82FD0E690B2305BE38 /* VOJobsListInteractor.m */; };
+		64B13718E769E86145648D80 /* VOJobsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4AE9CDA1B4294CBCB417A0 /* VOJobsListViewController.m */; };
+		740678A85481B0DC2146D79D /* VOJobsListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD706D98AED019E5916EAFF /* VOJobsListPresenter.m */; };
+		8836AF7D1FBFE284006A58A2 /* VOServiceCommunicationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF7C1FBFE284006A58A2 /* VOServiceCommunicationImpl.m */; };
+		8836AF801FBFE77C006A58A2 /* VOJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF7F1FBFE77C006A58A2 /* VOJsonParser.m */; };
+		8836AF831FBFE7FC006A58A2 /* VOLoadDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF821FBFE7FC006A58A2 /* VOLoadDataResponse.m */; };
+		8836AF891FBFEA05006A58A2 /* VOServerPesponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF881FBFEA05006A58A2 /* VOServerPesponse.m */; };
+		8836AF8C1FBFF0CA006A58A2 /* VOJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF8B1FBFF0CA006A58A2 /* VOJob.m */; };
+		8836AF8F1FBFF108006A58A2 /* VOAdress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF8E1FBFF108006A58A2 /* VOAdress.m */; };
+		8836AF931FBFF486006A58A2 /* VODataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF921FBFF486006A58A2 /* VODataBase.m */; };
+		8836AF9A1FBFF98D006A58A2 /* VODataBaseConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AF991FBFF98D006A58A2 /* VODataBaseConst.m */; };
+		8836AFA11FC00BF7006A58A2 /* VOJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AFA01FC00BF7006A58A2 /* VOJobTableViewCell.m */; };
+		8836AFA41FC00EBA006A58A2 /* VOJobViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8836AFA31FC00EBA006A58A2 /* VOJobViewModel.m */; };
 		884EF92A1FBF11B500AA0BD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EF9291FBF11B500AA0BD5 /* AppDelegate.m */; };
 		884EF92D1FBF11B500AA0BD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EF92C1FBF11B500AA0BD5 /* ViewController.m */; };
 		884EF9301FBF11B500AA0BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884EF92E1FBF11B500AA0BD5 /* Main.storyboard */; };
 		884EF9321FBF11B500AA0BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884EF9311FBF11B500AA0BD5 /* Assets.xcassets */; };
 		884EF9351FBF11B500AA0BD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884EF9331FBF11B500AA0BD5 /* LaunchScreen.storyboard */; };
 		884EF9381FBF11B500AA0BD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EF9371FBF11B500AA0BD5 /* main.m */; };
+		884EF93F1FBF15DE00AA0BD5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 884EF93E1FBF15DE00AA0BD5 /* Podfile */; };
+		884EF9491FBF178F00AA0BD5 /* VODataStoreAPIImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EF9481FBF178F00AA0BD5 /* VODataStoreAPIImpl.m */; };
+		884EF94C1FBF17A400AA0BD5 /* VONetworkAPIImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EF94B1FBF17A400AA0BD5 /* VONetworkAPIImpl.m */; };
+		8860417B1FC0716D004BF446 /* VOMasterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8860417A1FC0716D004BF446 /* VOMasterParser.m */; };
+		A107D366CD961CE7C98E2AAF /* VOJobsListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C9FD7906819537AFD9A19 /* VOJobsListRouter.m */; };
+		AEF76A37019207EA004E2A92 /* Pods_VOListOfJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB54B15D9A293DF810889F3 /* Pods_VOListOfJobs.framework */; };
+		DBC2BEC47C3BCFDE373F4B8D /* VOJobsListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB61566B99A7B61BD18672 /* VOJobsListAssembly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17EE353702F6B3B913E3E1A2 /* VOJobsListModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListModuleInput.h; sourceTree = "<group>"; };
+		18F885842A9655674D2ABAA1 /* VOJobsListViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListViewOutput.h; sourceTree = "<group>"; };
+		24BB6EDC97122AC48B5B00BB /* VOJobsListInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListInteractorInput.h; sourceTree = "<group>"; };
+		31AE7E4FA86E47A1D1E4C755 /* VOJobsListInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListInteractorOutput.h; sourceTree = "<group>"; };
+		343FF2589B4854877625D642 /* VOJobsListRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListRouterInput.h; sourceTree = "<group>"; };
+		5352BA82FD0E690B2305BE38 /* VOJobsListInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VOJobsListInteractor.m; sourceTree = "<group>"; };
+		8836AF781FBFE26C006A58A2 /* VOServiceCommunication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOServiceCommunication.h; sourceTree = "<group>"; };
+		8836AF7B1FBFE284006A58A2 /* VOServiceCommunicationImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOServiceCommunicationImpl.h; sourceTree = "<group>"; };
+		8836AF7C1FBFE284006A58A2 /* VOServiceCommunicationImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOServiceCommunicationImpl.m; sourceTree = "<group>"; };
+		8836AF7E1FBFE77C006A58A2 /* VOJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOJsonParser.h; sourceTree = "<group>"; };
+		8836AF7F1FBFE77C006A58A2 /* VOJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOJsonParser.m; sourceTree = "<group>"; };
+		8836AF811FBFE7FC006A58A2 /* VOLoadDataResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOLoadDataResponse.h; sourceTree = "<group>"; };
+		8836AF821FBFE7FC006A58A2 /* VOLoadDataResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOLoadDataResponse.m; sourceTree = "<group>"; };
+		8836AF871FBFEA05006A58A2 /* VOServerPesponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOServerPesponse.h; sourceTree = "<group>"; };
+		8836AF881FBFEA05006A58A2 /* VOServerPesponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOServerPesponse.m; sourceTree = "<group>"; };
+		8836AF8A1FBFF0CA006A58A2 /* VOJob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOJob.h; sourceTree = "<group>"; };
+		8836AF8B1FBFF0CA006A58A2 /* VOJob.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOJob.m; sourceTree = "<group>"; };
+		8836AF8D1FBFF108006A58A2 /* VOAdress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOAdress.h; sourceTree = "<group>"; };
+		8836AF8E1FBFF108006A58A2 /* VOAdress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOAdress.m; sourceTree = "<group>"; };
+		8836AF911FBFF486006A58A2 /* VODataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODataBase.h; sourceTree = "<group>"; };
+		8836AF921FBFF486006A58A2 /* VODataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODataBase.m; sourceTree = "<group>"; };
+		8836AF981FBFF98D006A58A2 /* VODataBaseConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODataBaseConst.h; sourceTree = "<group>"; };
+		8836AF991FBFF98D006A58A2 /* VODataBaseConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODataBaseConst.m; sourceTree = "<group>"; };
+		8836AF9F1FC00BF7006A58A2 /* VOJobTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOJobTableViewCell.h; sourceTree = "<group>"; };
+		8836AFA01FC00BF7006A58A2 /* VOJobTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOJobTableViewCell.m; sourceTree = "<group>"; };
+		8836AFA21FC00EBA006A58A2 /* VOJobViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOJobViewModel.h; sourceTree = "<group>"; };
+		8836AFA31FC00EBA006A58A2 /* VOJobViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOJobViewModel.m; sourceTree = "<group>"; };
 		884EF9251FBF11B500AA0BD5 /* VOListOfJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOListOfJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884EF9281FBF11B500AA0BD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		884EF9291FBF11B500AA0BD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +73,28 @@
 		884EF9341FBF11B500AA0BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		884EF9361FBF11B500AA0BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		884EF9371FBF11B500AA0BD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		884EF93E1FBF15DE00AA0BD5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		884EF9411FBF175C00AA0BD5 /* VONetworkAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VONetworkAPI.h; sourceTree = "<group>"; };
+		884EF9441FBF177700AA0BD5 /* VODataStoreAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODataStoreAPI.h; sourceTree = "<group>"; };
+		884EF9471FBF178F00AA0BD5 /* VODataStoreAPIImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VODataStoreAPIImpl.h; sourceTree = "<group>"; };
+		884EF9481FBF178F00AA0BD5 /* VODataStoreAPIImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VODataStoreAPIImpl.m; sourceTree = "<group>"; };
+		884EF94A1FBF17A400AA0BD5 /* VONetworkAPIImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VONetworkAPIImpl.h; sourceTree = "<group>"; };
+		884EF94B1FBF17A400AA0BD5 /* VONetworkAPIImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VONetworkAPIImpl.m; sourceTree = "<group>"; };
+		886041791FC0716D004BF446 /* VOMasterParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOMasterParser.h; sourceTree = "<group>"; };
+		8860417A1FC0716D004BF446 /* VOMasterParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOMasterParser.m; sourceTree = "<group>"; };
+		8BD706D98AED019E5916EAFF /* VOJobsListPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VOJobsListPresenter.m; sourceTree = "<group>"; };
+		96AFC9B8075362BD719FBA60 /* Pods-VOListOfJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOListOfJobs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOListOfJobs/Pods-VOListOfJobs.debug.xcconfig"; sourceTree = "<group>"; };
+		AB4AE9CDA1B4294CBCB417A0 /* VOJobsListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VOJobsListViewController.m; sourceTree = "<group>"; };
+		B6BB61566B99A7B61BD18672 /* VOJobsListAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VOJobsListAssembly.m; sourceTree = "<group>"; };
+		BBB54B15D9A293DF810889F3 /* Pods_VOListOfJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOListOfJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44C9FD7906819537AFD9A19 /* VOJobsListRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VOJobsListRouter.m; sourceTree = "<group>"; };
+		CA68755353F661D8560B757C /* Pods-VOListOfJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOListOfJobs.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOListOfJobs/Pods-VOListOfJobs.release.xcconfig"; sourceTree = "<group>"; };
+		D2FB1D4DEEEA6855A2ECA096 /* VOJobsListInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListInteractor.h; sourceTree = "<group>"; };
+		D487A8366E61160EEE89EAB1 /* VOJobsListViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListViewInput.h; sourceTree = "<group>"; };
+		DF2596A75FA104B43D75BCB3 /* VOJobsListRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListRouter.h; sourceTree = "<group>"; };
+		F4D436012F26541223DF1666 /* VOJobsListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListViewController.h; sourceTree = "<group>"; };
+		F5F5D11D2B1D295282315BFF /* VOJobsListPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListPresenter.h; sourceTree = "<group>"; };
+		FDC1035E403DD6CC27632119 /* VOJobsListAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VOJobsListAssembly.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +102,140 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF76A37019207EA004E2A92 /* Pods_VOListOfJobs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002B2B75025A6EF78D6B8F22 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				343FF2589B4854877625D642 /* VOJobsListRouterInput.h */,
+				DF2596A75FA104B43D75BCB3 /* VOJobsListRouter.h */,
+				C44C9FD7906819537AFD9A19 /* VOJobsListRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		016F1BAA4F3045FAC6345684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D487A8366E61160EEE89EAB1 /* VOJobsListViewInput.h */,
+				18F885842A9655674D2ABAA1 /* VOJobsListViewOutput.h */,
+				F4D436012F26541223DF1666 /* VOJobsListViewController.h */,
+				AB4AE9CDA1B4294CBCB417A0 /* VOJobsListViewController.m */,
+				8836AF9F1FC00BF7006A58A2 /* VOJobTableViewCell.h */,
+				8836AFA01FC00BF7006A58A2 /* VOJobTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C1EC529713020FB282C9501 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBB54B15D9A293DF810889F3 /* Pods_VOListOfJobs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53C8BF74BC9C48282220C7D3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				24BB6EDC97122AC48B5B00BB /* VOJobsListInteractorInput.h */,
+				31AE7E4FA86E47A1D1E4C755 /* VOJobsListInteractorOutput.h */,
+				D2FB1D4DEEEA6855A2ECA096 /* VOJobsListInteractor.h */,
+				5352BA82FD0E690B2305BE38 /* VOJobsListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8836AF741FBFDFE7006A58A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8836AF7E1FBFE77C006A58A2 /* VOJsonParser.h */,
+				8836AF7F1FBFE77C006A58A2 /* VOJsonParser.m */,
+				886041791FC0716D004BF446 /* VOMasterParser.h */,
+				8860417A1FC0716D004BF446 /* VOMasterParser.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8836AF751FBFDFFB006A58A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8836AFA21FC00EBA006A58A2 /* VOJobViewModel.h */,
+				8836AFA31FC00EBA006A58A2 /* VOJobViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8836AF761FBFE007006A58A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8836AF8A1FBFF0CA006A58A2 /* VOJob.h */,
+				8836AF8B1FBFF0CA006A58A2 /* VOJob.m */,
+				8836AF8D1FBFF108006A58A2 /* VOAdress.h */,
+				8836AF8E1FBFF108006A58A2 /* VOAdress.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8836AF771FBFE19E006A58A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8836AF9B1FBFFD50006A58A2 /* Entities */,
+				884EF9411FBF175C00AA0BD5 /* VONetworkAPI.h */,
+				884EF94A1FBF17A400AA0BD5 /* VONetworkAPIImpl.h */,
+				884EF94B1FBF17A400AA0BD5 /* VONetworkAPIImpl.m */,
+				8836AF781FBFE26C006A58A2 /* VOServiceCommunication.h */,
+				8836AF7B1FBFE284006A58A2 /* VOServiceCommunicationImpl.h */,
+				8836AF7C1FBFE284006A58A2 /* VOServiceCommunicationImpl.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8836AF901FBFF3E6006A58A2 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				8836AF941FBFF499006A58A2 /* Entities */,
+				884EF9441FBF177700AA0BD5 /* VODataStoreAPI.h */,
+				884EF9471FBF178F00AA0BD5 /* VODataStoreAPIImpl.h */,
+				884EF9481FBF178F00AA0BD5 /* VODataStoreAPIImpl.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		8836AF941FBFF499006A58A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8836AF911FBFF486006A58A2 /* VODataBase.h */,
+				8836AF921FBFF486006A58A2 /* VODataBase.m */,
+				8836AF981FBFF98D006A58A2 /* VODataBaseConst.h */,
+				8836AF991FBFF98D006A58A2 /* VODataBaseConst.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8836AF9B1FBFFD50006A58A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8836AF811FBFE7FC006A58A2 /* VOLoadDataResponse.h */,
+				8836AF821FBFE7FC006A58A2 /* VOLoadDataResponse.m */,
+				8836AF871FBFEA05006A58A2 /* VOServerPesponse.h */,
+				8836AF881FBFEA05006A58A2 /* VOServerPesponse.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		884EF91C1FBF11B500AA0BD5 = {
 			isa = PBXGroup;
 			children = (
 				884EF9271FBF11B500AA0BD5 /* VOListOfJobs */,
 				884EF9261FBF11B500AA0BD5 /* Products */,
+				E5AEAF7F9D6CE59F1BAD2842 /* Pods */,
+				3C1EC529713020FB282C9501 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +250,11 @@
 		884EF9271FBF11B500AA0BD5 /* VOListOfJobs */ = {
 			isa = PBXGroup;
 			children = (
+				8836AF761FBFE007006A58A2 /* Entities */,
+				8836AF751FBFDFFB006A58A2 /* Models */,
+				8836AF741FBFDFE7006A58A2 /* Utils */,
+				884EF9401FBF16E800AA0BD5 /* ServiceAPI */,
+				D492BBFD6DED05F21720149F /* Modules */,
 				884EF9281FBF11B500AA0BD5 /* AppDelegate.h */,
 				884EF9291FBF11B500AA0BD5 /* AppDelegate.m */,
 				884EF92B1FBF11B500AA0BD5 /* ViewController.h */,
@@ -67,8 +264,66 @@
 				884EF9331FBF11B500AA0BD5 /* LaunchScreen.storyboard */,
 				884EF9361FBF11B500AA0BD5 /* Info.plist */,
 				884EF9371FBF11B500AA0BD5 /* main.m */,
+				884EF93E1FBF15DE00AA0BD5 /* Podfile */,
 			);
 			path = VOListOfJobs;
+			sourceTree = "<group>";
+		};
+		884EF9401FBF16E800AA0BD5 /* ServiceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8836AF901FBFF3E6006A58A2 /* DataBase */,
+				8836AF771FBFE19E006A58A2 /* Network */,
+			);
+			path = ServiceAPI;
+			sourceTree = "<group>";
+		};
+		95F9A49C8417F5FF9AC111D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				17EE353702F6B3B913E3E1A2 /* VOJobsListModuleInput.h */,
+				F5F5D11D2B1D295282315BFF /* VOJobsListPresenter.h */,
+				8BD706D98AED019E5916EAFF /* VOJobsListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AEDD7379384E1D8CFF240306 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FDC1035E403DD6CC27632119 /* VOJobsListAssembly.h */,
+				B6BB61566B99A7B61BD18672 /* VOJobsListAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		BA0C6CB79812B95EE9E3782C /* JobsList */ = {
+			isa = PBXGroup;
+			children = (
+				AEDD7379384E1D8CFF240306 /* Assembly */,
+				016F1BAA4F3045FAC6345684 /* View */,
+				95F9A49C8417F5FF9AC111D1 /* Presenter */,
+				53C8BF74BC9C48282220C7D3 /* Interactor */,
+				002B2B75025A6EF78D6B8F22 /* Router */,
+			);
+			path = JobsList;
+			sourceTree = "<group>";
+		};
+		D492BBFD6DED05F21720149F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C6CB79812B95EE9E3782C /* JobsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E5AEAF7F9D6CE59F1BAD2842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96AFC9B8075362BD719FBA60 /* Pods-VOListOfJobs.debug.xcconfig */,
+				CA68755353F661D8560B757C /* Pods-VOListOfJobs.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +333,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 884EF93B1FBF11B500AA0BD5 /* Build configuration list for PBXNativeTarget "VOListOfJobs" */;
 			buildPhases = (
+				6DC4594A4FEBEC7E31B09F98 /* [CP] Check Pods Manifest.lock */,
 				884EF9211FBF11B500AA0BD5 /* Sources */,
 				884EF9221FBF11B500AA0BD5 /* Frameworks */,
 				884EF9231FBF11B500AA0BD5 /* Resources */,
+				9512816399B0666DCAD9318C /* [CP] Embed Pods Frameworks */,
+				9A0AEC0B34040F0E8E07C851 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,7 +360,7 @@
 				TargetAttributes = {
 					884EF9241FBF11B500AA0BD5 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -131,20 +389,95 @@
 			files = (
 				884EF9351FBF11B500AA0BD5 /* LaunchScreen.storyboard in Resources */,
 				884EF9321FBF11B500AA0BD5 /* Assets.xcassets in Resources */,
+				884EF93F1FBF15DE00AA0BD5 /* Podfile in Resources */,
 				884EF9301FBF11B500AA0BD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DC4594A4FEBEC7E31B09F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VOListOfJobs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9512816399B0666DCAD9318C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VOListOfJobs/Pods-VOListOfJobs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOListOfJobs/Pods-VOListOfJobs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A0AEC0B34040F0E8E07C851 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOListOfJobs/Pods-VOListOfJobs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		884EF9211FBF11B500AA0BD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8860417B1FC0716D004BF446 /* VOMasterParser.m in Sources */,
+				8836AF831FBFE7FC006A58A2 /* VOLoadDataResponse.m in Sources */,
+				8836AF7D1FBFE284006A58A2 /* VOServiceCommunicationImpl.m in Sources */,
+				884EF9491FBF178F00AA0BD5 /* VODataStoreAPIImpl.m in Sources */,
 				884EF92D1FBF11B500AA0BD5 /* ViewController.m in Sources */,
+				8836AF9A1FBFF98D006A58A2 /* VODataBaseConst.m in Sources */,
+				884EF94C1FBF17A400AA0BD5 /* VONetworkAPIImpl.m in Sources */,
 				884EF9381FBF11B500AA0BD5 /* main.m in Sources */,
+				8836AF8C1FBFF0CA006A58A2 /* VOJob.m in Sources */,
+				8836AFA41FC00EBA006A58A2 /* VOJobViewModel.m in Sources */,
+				8836AF931FBFF486006A58A2 /* VODataBase.m in Sources */,
 				884EF92A1FBF11B500AA0BD5 /* AppDelegate.m in Sources */,
+				DBC2BEC47C3BCFDE373F4B8D /* VOJobsListAssembly.m in Sources */,
+				8836AF891FBFEA05006A58A2 /* VOServerPesponse.m in Sources */,
+				64B13718E769E86145648D80 /* VOJobsListViewController.m in Sources */,
+				8836AFA11FC00BF7006A58A2 /* VOJobTableViewCell.m in Sources */,
+				8836AF8F1FBFF108006A58A2 /* VOAdress.m in Sources */,
+				740678A85481B0DC2146D79D /* VOJobsListPresenter.m in Sources */,
+				8836AF801FBFE77C006A58A2 /* VOJsonParser.m in Sources */,
+				21EEED4459698D8252EC541A /* VOJobsListInteractor.m in Sources */,
+				A107D366CD961CE7C98E2AAF /* VOJobsListRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,28 +609,34 @@
 		};
 		884EF93C1FBF11B500AA0BD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96AFC9B8075362BD719FBA60 /* Pods-VOListOfJobs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W7396K3YWC;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VOListOfJobs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orlov.vasili.VOListOfJobs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		884EF93D1FBF11B500AA0BD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA68755353F661D8560B757C /* Pods-VOListOfJobs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W7396K3YWC;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VOListOfJobs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orlov.vasili.VOListOfJobs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
