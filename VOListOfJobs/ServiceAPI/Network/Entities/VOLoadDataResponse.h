@@ -11,7 +11,7 @@
 #import "VOJob.h"
 
 @interface VOLoadDataResponse : VOServerPesponse
-@property (nonatomic, strong)      NSArray<VOJob*>  *jobs;
+@property (nonatomic, strong)      NSMutableArray<VOJob*>  *jobs;
 @property (nonatomic, assign)      int               total;
 
 @end

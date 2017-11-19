@@ -10,6 +10,9 @@
 #import "VOJobViewModel.h"
 
 @interface VOJobTableViewCell : UITableViewCell
-@property (strong, nonatomic)  VOJobViewModel *model;
-- (void)setupStateWithModel:(VOJobViewModel*)model;
+
+@property (strong, nonatomic) IBOutlet UILabel *lblJobName;
+@property (strong, nonatomic) IBOutlet UILabel *lblAdrStreet;
+@property (strong, nonatomic) IBOutlet UILabel *lblAdrZip;
+@property (strong, nonatomic) IBOutlet UILabel *lblAdrCity;
 @end

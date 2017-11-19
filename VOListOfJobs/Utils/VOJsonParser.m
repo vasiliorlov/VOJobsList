@@ -56,9 +56,9 @@
             for (NSDictionary *item in items) {
                 VOJob *job = [[VOJob alloc] init];
                 job.workName = item[@"workAssignmentName"];
-                job.workId = item[@"workAssignmentName"];
+                job.workId = item[@"workAssignmentId"];
                 
-                NSDictionary *location = jLoadDataResponse[@"jobLocation"];
+                NSDictionary *location = item[@"jobLocation"];
             
                 VOAdress *adress = [[VOAdress alloc] init];
                 adress.street = location[@"addressStreet"];
@@ -73,8 +73,7 @@
         loadDataResponse.total = [data[@"total"] unsignedIntegerValue];
     }
 
-    
-    
+  
     return loadDataResponse;
 }
 @end

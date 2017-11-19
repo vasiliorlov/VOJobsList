@@ -11,5 +11,5 @@
 @protocol VODataStoreAPI <NSObject>
 - (void)saveJobs:(NSArray<VOJob*> *)jobs;
 - (NSArray<VOJob*> *)readAllJobs;
-- (BOOL)clearAllJobs;
+- (void)clearAllJobs;
 @end

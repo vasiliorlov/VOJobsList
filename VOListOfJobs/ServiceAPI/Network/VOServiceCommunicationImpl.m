@@ -35,8 +35,9 @@ NSString * const kCurrentAddress = @"https://www.coople.com/resources/api/work-a
     
     AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
     
-    
-    [manager GET:url.absoluteString parameters:params success:^(NSURLSessionTask *task, id responseObject) {
+    [manager GET:url.absoluteString  parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        //
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         VOJsonParser *jsonParser = [[VOJsonParser alloc] init];
         NSDictionary *jsonData = responseObject;
         VOServerPesponse *serverResponse = [jsonParser parseServerResponse:jsonData];
@@ -47,11 +48,10 @@ NSString * const kCurrentAddress = @"https://www.coople.com/resources/api/work-a
             return;
         }
         completeHandler(responseObject, nil);
-        
-    } failure:^(NSURLSessionTask *operation, NSError *error) {
-        completeHandler(nil, error);
-        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+         completeHandler(nil, error);
     }];
+
  
 }
 

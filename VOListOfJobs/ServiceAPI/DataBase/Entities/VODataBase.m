@@ -156,9 +156,9 @@ static int database_version = 1;
         
         NSString * dbVersionSql = [NSString stringWithFormat:@"PRAGMA user_version = %d", database_version];
         
-#pragma mark cus tables
+#pragma mark jobs tables
         
-        NSString *cusTableSql = [NSString stringWithFormat:@"CREATE TABLE [%s] ("
+        NSString *jobsTableSql = [NSString stringWithFormat:@"CREATE TABLE [%s] ("
                                   "[%s] INTEGER PRIMARY KEY NOT NULL,"
                                   "[%s] TEXT             NOT NULL,"
                                   "[%s] TEXT             NULL,"
@@ -171,7 +171,7 @@ static int database_version = 1;
    
         
         
-        NSArray * sqlQueries = @[dbVersionSql, cusTableSql];
+        NSArray * sqlQueries = @[dbVersionSql, jobsTableSql];
         
         state = sqlite3_exec(db, "BEGIN TRANSACTION", 0, 0, 0);
         for (NSString * query in sqlQueries) {
@@ -184,24 +184,5 @@ static int database_version = 1;
         return YES;
     }
 }
-- (void)clearSessionData
-{
-    [self openDatabaseReadOnly:NO];
-    [self startTransaction];
-    
-    const char *tables_to_clear[] = { Db_Table_Jobs};
-    int tables_number = sizeof(tables_to_clear) / sizeof(const char *);
-    int state = 0;
-    
-    for (int i = 0; i < tables_number; i++)
-    {
-        const char *table_name = tables_to_clear[i];
-        NSString *sql = [NSString stringWithFormat:@"DELETE FROM %s", table_name];
-        state = sqlite3_exec(sqliteDatabase, [sql UTF8String], 0, 0, 0);
-        NSAssert(state == SQLITE_OK, @"%s: sql \"%@\" %s", __FUNCTION__, sql, sqlite3_errmsg(sqliteDatabase));
-    }
-    
-    [self commitTransaction];
-    [self closeDatabase];
-}
+
 @end

@@ -19,11 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-        VODataBase * database = [VODataBase sharedInstance];
+    VODataBase * database = [VODataBase sharedInstance];
     if (![database isDatabaseCreated]){
         [database createDatabase];
     }
-
+    
     return YES;
 }
 

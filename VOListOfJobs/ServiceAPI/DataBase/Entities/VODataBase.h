@@ -27,7 +27,5 @@
 
 - (BOOL)isDatabaseCreated;
 - (BOOL)createDatabase;
-- (void)clearData;
-
 
 @end

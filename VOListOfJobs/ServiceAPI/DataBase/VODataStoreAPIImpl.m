@@ -130,7 +130,27 @@ static void bindSaveJobStatement(sqlite3_stmt * save_job_stmt, VOJob * job)
     }
     return result;
 }
-- (BOOL)clearAllJobs{
-    return true;
+- (void)clearAllJobs{
+    VODataBase * database = [VODataBase sharedInstance];
+    @synchronized(database.databaseMutex)
+    {
+        [database openDatabaseReadOnly:NO];
+        [database startTransaction];
+        
+        const char * tables_to_clear[] = { Db_Table_Jobs};
+        int tables_number = sizeof(tables_to_clear) / sizeof(const char *);
+        int state = 0;
+        
+        for (int i = 0; i < tables_number; i++)
+        {
+            const char * table_name = tables_to_clear[i];
+            NSString * sql = [NSString stringWithFormat:@"DELETE FROM %s", table_name];
+            state = sqlite3_exec(database.sqliteDatabase, [sql UTF8String], 0, 0, 0);
+            NSAssert(state == SQLITE_OK, @"%s: sql \"%@\" %s", __FUNCTION__, sql, sqlite3_errmsg(database.sqliteDatabase));
+        }
+        
+        [database commitTransaction];
+        [database closeDatabase];
+    }
 }
 @end

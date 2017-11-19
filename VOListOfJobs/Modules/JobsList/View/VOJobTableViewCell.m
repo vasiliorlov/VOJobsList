@@ -8,10 +8,7 @@
 
 #import "VOJobTableViewCell.h"
 @interface VOJobTableViewCell ()
-@property (strong, nonatomic) IBOutlet UILabel *lblJobName;
-@property (strong, nonatomic) IBOutlet UILabel *lblAdrStreet;
-@property (strong, nonatomic) IBOutlet UILabel *lblAdrZip;
-@property (strong, nonatomic) IBOutlet UILabel *lblAdrCity;
+
 @end
 
 @implementation VOJobTableViewCell
@@ -20,12 +17,7 @@
     [super awakeFromNib];
     // Initialization code
 }
-- (void)setupStateWithModel:(VOJobViewModel*)model{
-    _lblJobName.text    = model.jobName;
-    _lblAdrStreet.text  = model.adrStreet;
-    _lblAdrZip.text     = model.adrZip;
-    _lblAdrCity.text    = model.adrCity;
-}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
